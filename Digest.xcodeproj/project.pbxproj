@@ -14,6 +14,7 @@
 		D005F28E1B0668420040B952 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D005F28D1B0668420040B952 /* Images.xcassets */; };
 		D005F2911B0668420040B952 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D005F28F1B0668420040B952 /* LaunchScreen.xib */; };
 		D005F29D1B0668420040B952 /* DigestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F29C1B0668420040B952 /* DigestTests.m */; };
+		D0590A4B1B067C8400DCA4BE /* PostController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0590A4A1B067C8400DCA4BE /* PostController.m */; };
 		D09C5D491B067391001054CC /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = D09C5D481B067391001054CC /* Post.m */; };
 		D09C5D4D1B0676C9001054CC /* Publisher.m in Sources */ = {isa = PBXBuildFile; fileRef = D09C5D4C1B0676C9001054CC /* Publisher.m */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,8 @@
 		D005F2961B0668420040B952 /* DigestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D005F29B1B0668420040B952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D005F29C1B0668420040B952 /* DigestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigestTests.m; sourceTree = "<group>"; };
+		D0590A491B067C8400DCA4BE /* PostController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostController.h; sourceTree = "<group>"; };
+		D0590A4A1B067C8400DCA4BE /* PostController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostController.m; sourceTree = "<group>"; };
 		D09C5D471B067391001054CC /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
 		D09C5D481B067391001054CC /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		D09C5D4B1B0676C9001054CC /* Publisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Publisher.h; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 		D09C5D4A1B067399001054CC /* Post Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D0590A491B067C8400DCA4BE /* PostController.h */,
+				D0590A4A1B067C8400DCA4BE /* PostController.m */,
 				D09C5D4B1B0676C9001054CC /* Publisher.h */,
 				D09C5D4C1B0676C9001054CC /* Publisher.m */,
 				D09C5D471B067391001054CC /* Post.h */,
@@ -238,6 +243,7 @@
 				D005F2831B0668420040B952 /* AppDelegate.m in Sources */,
 				D09C5D4D1B0676C9001054CC /* Publisher.m in Sources */,
 				D005F2801B0668420040B952 /* main.m in Sources */,
+				D0590A4B1B067C8400DCA4BE /* PostController.m in Sources */,
 				D005F2861B0668420040B952 /* Digest.xcdatamodeld in Sources */,
 				D09C5D491B067391001054CC /* Post.m in Sources */,
 			);
