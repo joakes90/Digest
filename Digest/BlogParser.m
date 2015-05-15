@@ -17,9 +17,24 @@
     dispatch_once(&onceToken, ^{
         sharedInstance = [[BlogParser alloc] init];
         sharedInstance.parser = [[NSXMLParser alloc] init];
+        sharedInstance.parser.delegate = sharedInstance;
     });
     return sharedInstance;
 }
+
+-(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
+    
+}
+
+-(void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
+    
+}
+
+-(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
+    
+}
+
+
 
 
 @end

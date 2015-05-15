@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BlogParser : NSObject
+@interface BlogParser : NSObject <NSXMLParserDelegate>
 
 @property (strong, nonatomic) NSXMLParser *parser;
 
