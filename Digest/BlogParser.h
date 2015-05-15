@@ -10,9 +10,13 @@
 
 @interface BlogParser : NSObject <NSXMLParserDelegate>
 
-@property (strong, nonatomic) NSXMLParser *parser;
+@property (strong, nonatomic, readonly) NSXMLParser *parser;
+
+@property(readonly, copy) NSError *parserError;
 
 
 + (instancetype) sharedInstance;
+
+-(BOOL)beginParseWithURL:(NSURL *)url;
 
 @end

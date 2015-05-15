@@ -7,6 +7,7 @@
 //
 
 #import "AddFeedViewController.h"
+#import "BlogParser.h"
 
 @interface AddFeedViewController () <UITextFieldDelegate>
 
@@ -32,18 +33,17 @@
 - (IBAction)addFeed:(id)sender {
     
     NSURL *url = [NSURL URLWithString:self.feedURL.text];
-    
+    BOOL validUrl = [[BlogParser sharedInstance] beginParseWithURL:url];
     // Verifying URL is not blank and is valid
     
-    if (url && ![url.absoluteString isEqualToString:@""]) {
+    if (url && validUrl) {
+        
         //call create source from postcontroller
+        
+        NSLog(@"valid URL");
     
     } else {
-            UIAlertController *errorAlert = [UIAlertController alertControllerWithTitle:@"No valid URL provided." message:@"No valid URL was found. Please reenter the address and try again" preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil];
-        
-        [errorAlert addAction:ok];
-        [self presentViewController:errorAlert animated:YES completion:nil];
+        [self displayError];
     }
     
     
@@ -54,6 +54,14 @@
     [textField resignFirstResponder];
     
     return YES;
+}
+
+-(void)displayError {
+    UIAlertController *errorAlert = [UIAlertController alertControllerWithTitle:@"No valid URL provided." message:@"No valid URL was found. Please reenter the address and try again" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil];
+    
+    [errorAlert addAction:ok];
+    [self presentViewController:errorAlert animated:YES completion:nil];
 }
 
 @end
