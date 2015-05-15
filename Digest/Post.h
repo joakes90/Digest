@@ -23,7 +23,7 @@
 
 @property (assign, nonatomic) BOOL isFavorited;
 
-+(instancetype) initFromDictionary;
+//+(instancetype) initFromDictionary;
 
 
 @end
