@@ -18,6 +18,7 @@
 		D09C5D491B067391001054CC /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = D09C5D481B067391001054CC /* Post.m */; };
 		D09C5D4D1B0676C9001054CC /* Publisher.m in Sources */ = {isa = PBXBuildFile; fileRef = D09C5D4C1B0676C9001054CC /* Publisher.m */; };
 		D0F170611B0689F400392AF9 /* AddFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F170601B0689F400392AF9 /* AddFeedViewController.m */; };
+		D0F170671B069E9100392AF9 /* BlogParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F170661B069E9100392AF9 /* BlogParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		D09C5D4C1B0676C9001054CC /* Publisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Publisher.m; sourceTree = "<group>"; };
 		D0F1705F1B0689F400392AF9 /* AddFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFeedViewController.h; sourceTree = "<group>"; };
 		D0F170601B0689F400392AF9 /* AddFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFeedViewController.m; sourceTree = "<group>"; };
+		D0F170651B069E9100392AF9 /* BlogParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogParser.h; sourceTree = "<group>"; };
+		D0F170661B069E9100392AF9 /* BlogParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,8 @@
 				D09C5D4C1B0676C9001054CC /* Publisher.m */,
 				D09C5D471B067391001054CC /* Post.h */,
 				D09C5D481B067391001054CC /* Post.m */,
+				D0F170651B069E9100392AF9 /* BlogParser.h */,
+				D0F170661B069E9100392AF9 /* BlogParser.m */,
 			);
 			name = "Post Classes";
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F170671B069E9100392AF9 /* BlogParser.m in Sources */,
 				D005F2831B0668420040B952 /* AppDelegate.m in Sources */,
 				D09C5D4D1B0676C9001054CC /* Publisher.m in Sources */,
 				D005F2801B0668420040B952 /* main.m in Sources */,
